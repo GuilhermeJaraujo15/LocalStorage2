@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Loja virtual com carrinho de compras salvo no navegador.">
+  <title data-i18n="pageTitle">Sistema de Carrinho</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="i18n.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="page-header">
+    <h1 data-i18n="storeTitle">Loja Virtual</h1>
+    <button id="language-toggle" class="language-toggle" type="button" lang="en" aria-label="Switch language to English">
+      <span aria-hidden="true">🌐</span>
+      <span id="language-label">English</span>
+    </button>
+  </header>
+
+  <main class="container">
+    <section class="produtos" aria-labelledby="products-heading">
+      <h2 id="products-heading" data-i18n="products">Produtos</h2>
+      <div id="lista-produtos"></div>
+    </section>
+
+    <section class="carrinho" aria-labelledby="cart-heading">
+      <h2 id="cart-heading" data-i18n="cart">Carrinho</h2>
+      <div id="lista-carrinho" aria-live="polite"></div>
+      <h3><span data-i18n="total">Total</span>: <span id="total">R$ 0,00</span></h3>
+      <button id="limpar-carrinho" type="button" data-i18n="clearCart">Limpar Carrinho</button>
+    </section>
+  </main>
+</body>
+</html>
